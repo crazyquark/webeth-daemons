@@ -1,6 +1,6 @@
 'use strict'
 
-var ZipCode = require('../lib/zipcode');
+var ZipCode = require('../lib/address/zipcode');
 
 function main() {
 	console.log('Starting up...');

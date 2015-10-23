@@ -4,6 +4,7 @@
   "main": "server/app.js",
   "dependencies": {
     "commander": "^2.9.0",
+    "mongoose": "^4.2.2",
     "mongoose-q": "^0.1.0",
     "q": "^1.4.1",
     "web3": "git+https://github.com/crazyquark/web3.js#private-dev"
