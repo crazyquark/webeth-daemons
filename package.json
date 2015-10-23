@@ -1,0 +1,18 @@
+{
+  "name": "webeth-daemons",
+  "version": "0.0.1",
+  "main": "server/app.js",
+  "dependencies": {
+    "web3": "crazyquark/web3.js#private-dev"
+  },
+  "devDependencies": {
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "start": "node server/app.js",
+    "test": "grunt test"
+  },
+  "private": true
+}
