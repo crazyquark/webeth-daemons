@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "main": "server/app.js",
   "dependencies": {
+    "commander": "^2.9.0",
+    "mongoose-q": "^0.1.0",
+    "q": "^1.4.1",
     "web3": "git+https://github.com/crazyquark/web3.js#private-dev"
   },
   "devDependencies": {},
@@ -20,7 +23,7 @@
     "url": "https://github.com/crazyquark/webeth-daemons.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "GPLv2",
   "bugs": {
     "url": "https://github.com/crazyquark/webeth-daemons/issues"
   },
