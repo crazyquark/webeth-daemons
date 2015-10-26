@@ -5,5 +5,5 @@ webeth's Ethereum contracts
 
 Servers:  
 * addresser: a zip code validating daemon 
-* contractminder: a service to check if contracts gets mined  
+* contractminder: a service to check if contracts get mined  
  
