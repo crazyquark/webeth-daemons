@@ -1,6 +1,7 @@
 'use strict'
 
 var mongoose = require('mongoose');
+var mubsub = require('mubsub');
 
 var Contract = require('../lib/contract/contract')
 
@@ -18,13 +19,11 @@ var config = {
 function main() {
 	console.log('Starting up...');
 	
-	// Connect to database
-	mongoose.connect(config.mongo.uri, config.mongo.options);
-
-	Contract.listContracts().then(function (contracts) {
-		for (var key in contracts) {
-			console.log(contracts[key]);
-		}
+	var client = mubsub(config.mongo.uri);
+	var channel = client.channel('contracts');
+	
+	var subscription = channel.subscribe(function(user) {
+		console.log(user);
 	});
 }
 
